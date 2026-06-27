@@ -5,6 +5,7 @@ class Node {
   }
 }
 
+//----------------------------------------
 class linkedlist {
   constructor() {
     this.head = null;
@@ -84,6 +85,45 @@ class linkedlist {
     this.size--;
   }
 
+  //-------------------------------------------
+
+
+  search(data){
+    if(this.size===0){
+        return -1
+    }
+    let i=0;
+    let curr=this.head;
+    while(curr){
+        if(curr.data===data){
+            console.log(i)
+            return i
+        }
+        curr=curr.next;
+        i++;
+    }
+    return -1
+  }
+  //-------------------------------------------------------------
+
+  reverse(data){
+    let prev=null;
+    let nextnode;
+    let curr=this.head;
+    while(curr){
+      nextnode=curr.next;
+      curr.next=prev;
+      prev=curr;
+      curr=nextnode
+    }
+    this.head=prev
+    return prev
+  }
+
+
+
+
+
   print() {
     if (this.isEmpty()) {
       console.log("is empty");
@@ -113,6 +153,9 @@ list.insert(10, 0);
 list.insert(20, 0);
 list.insert(30, 1);
 list.insert(40, 2);
+list.remove()
+// list.reverse()
+// list.search(30)
 
 // console.log(list.remove(1))
 list.print();
