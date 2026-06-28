@@ -108,14 +108,14 @@
 // console.log(sum([1,2,3,4,5],0))
 
 
-function max(arr,index=0){
-    if(index===arr.length)return arr[index]
-    return  arr[index]
-}
-console.log(max([1,2,3,4,5]))
+// function max(arr,index=0){
+//     if(index===arr.length)return arr[index]
+//     return  arr[index]
+// }
+// console.log(max([1,2,3,4,5]))
 
 //-------------------------------------------------------
-//string reversing
+// string reversing
 
 // function rev(str){
 //     if(str.length===0) return "";
@@ -154,6 +154,11 @@ console.log(max([1,2,3,4,5]))
 //     return sum(n-1)
 // }
 // console.log(sum(5))
+
+//=--------------------------------------------------------
+
+
+
 
 
 
