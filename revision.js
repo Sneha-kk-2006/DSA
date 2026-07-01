@@ -219,6 +219,40 @@ reverse(data){
 }
 
 
+
+// reverse(data){
+//     if(this.size===0){
+//         return 0;
+//     }
+//     let curr=this.head;
+//      let prev=null
+//      let next=null
+//     while(curr.data!=null){
+
+//     }
+// // return 0
+//     // curr.next=curr.prev;
+//     // curr.prev.prev=curr;
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // add(data){
 //     if()
 // }

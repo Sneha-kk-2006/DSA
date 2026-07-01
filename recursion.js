@@ -158,12 +158,43 @@
 //=--------------------------------------------------------
 
 
+// function digitsum(dig){
+//     if(dig===0) return 0;
+//     return dig%10+digitsum(Math.floor(dig/10))
+// }
+// console.log(digitsum(123))
 
 
+//--------------------------------
+// function digitcount(digit){
+//     if(digit===0)return 0;
+    
+//     return 1+digitcount(Math.floor(digit/10))
+// }
+
+// console.log(digitcount(123))
+
+//------------------------------------
+
+// function arrayreverse(arr,start=0, end=arr.length-1){
+//     if(start>=end) return arr;
+//     [arr[start],arr[end]]=[arr[end],arr[start]]
+//     return arrayreverse(arr,start+1,end-1)
+// }
+// console.log(arrayreverse([1,2,3,4]))
 
 
+//------------------------------------------
 
 
+// function rev(str,index=0){
+//     if(str.length===0) return "";
+//     return rev(str.slice(1))+str[0]
+// }
+
+// console.log(rev("sneha"))
+
+//=============================================
 
 
 
