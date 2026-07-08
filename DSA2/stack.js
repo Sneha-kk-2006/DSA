@@ -74,7 +74,7 @@ class stack{
     let val=this.top.data
     this.top=this.top.next
   return val
-  
+
     }
 
 
@@ -111,8 +111,32 @@ function palin(str){
     return true
 }
 
+function validparenthesis(str){
+let stack=[]
+let map={
+    '}':'{',
+    ']':'[',
+    ')':'('
+}
+    for(let ch of str){
+     if(ch==='{'||ch==='('||ch==='['){
+        stack.push(ch)
+     }else{
+       if( stack.pop()!==map[ch]){
+             return false;
+        }
+       
+     }
+     return stack.length===0
+    }
+}
 
-console.log(palin("maam"))
+
+console.log(validparenthesis("()"))
+
+
+
+// console.log(palin("maam"))
 // const s=new stack()
 // s.push(10)
 // s.push(20)

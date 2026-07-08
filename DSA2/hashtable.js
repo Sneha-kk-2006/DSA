@@ -10,11 +10,17 @@
 //     }
 //     return total%this.size
 // }
+
+
 // //due to this the name is added after the already name exists it overwrite the first one soremoving this we create a new set method
+
+
 // //  set(key , value){
 // //     const index=this.hash(key)
 // //     this.table[index]=value
 // //  }
+
+
 //  set(key , value){
 //     const index=this.hash(key)
 //     const bucket=this.table[index]
