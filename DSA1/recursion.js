@@ -90,13 +90,13 @@
 // console.log(sum(5))
 
 
-// function sum(n){
-//     console.log(n)
-//     if(n===5)return 5;
-//     return sum(n+1)
-// }
+function sum(n){
+    console.log(n)
+    if(n===5)return 5;
+    return sum(n+1)
+}
 
-// sum(1)
+sum(1)
 
 
 // function sum(arr,index=0){
