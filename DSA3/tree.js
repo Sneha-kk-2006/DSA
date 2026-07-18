@@ -53,3 +53,94 @@ function postorder(root){
 }
 
 postorder(tree.root)
+
+
+
+
+class Node{
+    constructor(value){
+        this.value=value;
+        this.left=null;
+        this.right=null
+    }
+}
+
+class binarytree{
+    constructor(){
+        this.root=null
+    }
+    isEmpty(){
+        return this.root===null
+    }
+    
+    // insert(val){
+    //     let newnode=new Node(val)
+    //     if(this.isEmpty()){
+    //         this.root=newnode
+    //         return ;
+    //     }
+    //     let curr=this.root
+    //     while(curr){
+    //         if(val<curr.value){
+    //             if(!curr.left){
+    //                 curr.left=newnode
+    //                 return
+    //             }
+    //             curr=curr.left
+    //         }else if(val>curr.value){
+    //             if(!curr.right){
+    //                 curr.right=newnode
+    //                 return
+    //             }
+    //             curr=curr.right
+    //         }
+    //     }
+    //     return null
+        
+    // }
+    
+    
+    insert(val){
+        let newNode=new Node(val)
+        if(this.isEmpty()){
+            this.root=newNode;
+            return
+        }
+        
+        let queue=[]
+        queue.push(this.root);
+        while(queue.length>0){
+            let curr=queue.shift()
+            if(!curr.left){
+                curr.left=newNode
+                return
+            }else{
+                queue.push(curr.left)
+            }
+            if(!curr.right){
+                curr.right=newNode
+                return
+            }else{
+                queue.push(curr.right)
+            }
+        }
+    }
+    
+    inorder(root){
+        if(!root) return null;
+        this.inorder(root.left)
+        console.log(root.value)
+        this.inorder(root.right)
+        
+    }
+    
+}
+
+const bt=new binarytree()
+bt.insert(10)
+bt.insert(5)
+bt.insert(15)
+bt.insert(6)
+bt.insert(8)
+bt.insert(20)
+bt.inorder(bt.root)
