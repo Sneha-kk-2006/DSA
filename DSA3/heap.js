@@ -133,8 +133,6 @@ function heapsort(arr){
     for(let i=Math.floor(n/2)-1;i>0;i--){
         heapify(arr,n,i)
     }
-
-
 }
 
 
